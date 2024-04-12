@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Age</title>
+    <style>
+        body{
+            background-color: seagreen;
+
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin-bottom: 300PX;
+        }
+        input{
+            padding: 10px 40px;
+            border-radius: 10px;
+            outline: none;
+            
+        }
+
+        button{
+            margin-top: 40px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        
+        }
+
+        .background{
+            background-image: url(voting_bimage.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+    </style>
+    <script>
+        function calculate(){
+            let age = document.getElementById("age").value;
+            if(age >= 18) {
+                alert("eleigible")
+            }
+            else{
+                document.write("not eligible")
+            }
+        }
+    </script>
+</head>
+<body class="background">
+    <div class="container">
+        <input type="text" name="" id="age" placeholder="Enter your age :">
+        <button type="submit" onclick="calculate()">click here</button>
+    </div>
+    
+</body>
+</html>
